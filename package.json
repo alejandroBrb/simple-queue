@@ -1,0 +1,27 @@
+{
+  "name": "simple-queue",
+  "version": "0.0.1",
+  "description": "A simple queue implementation in Koa a bullmq",
+  "main": "index.js",
+  "scripts": {
+    "start": "if [ \"$NODE_ENV\" = \"production\" ]; then node .; else nodemon --inspect=0.0.0.0 .; fi;",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "keywords": [],
+  "author": "Alejandro Barba",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "async": "^3.2.3",
+    "bullmq": "^1.85.3",
+    "dotenv": "^16.0.0",
+    "esm": "^3.2.25",
+    "ioredis": "^5.0.6",
+    "jszip": "^3.9.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "redis": "^4.1.0"
+  }
+}
